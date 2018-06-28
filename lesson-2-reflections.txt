@@ -1,0 +1,3 @@
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+Staging area is the content to be submitted as the current commit, it acts as a buffer between directory and repository, to let users select which files for the current commit.
+
