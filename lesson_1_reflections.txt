@@ -1,0 +1,23 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+It highlights the difference between two files, which is much more reliable than reading through the entirety of the files.
+The diff can also be help distinguish between intentional and unintentional changes.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+It would be easy to review each modular change within the entire history of a file. 
+In case of bugs and feature changes it would be easier to spot precisely which part of file should be responsible for an update.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+It is more flexible to reflect a logical change in the commit. With each commit representing a logical change, the version history is more understandable to other people.
+Making a logical change is a judgemental call and is susceptible to human error, for example a commit maybe too big or too small. It is also possible to forget to commit changes at all.
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+For Git, the project it is keeping track of probably requires multiple files to function properly, so it is more sensible to version the "project" as a whole.
+For Google docs, although multiple documents may relate to one another, it mainly functions as a file storage. So it make sense to keep the versions of each file separated.
+
+How can you use the commands git log and git diff to view the history of files?
+git log - view commits in chronological order
+git diff - usage is git diff [old_ID] [new_ID]. This shows what actually is changed for this commit.
+
+How might using version control make you more confident to make changes that could break something?
+In case something breaks it is trivial to rollback to an older version of the project, thus reduce the mental burden for the developers when making big changes.
