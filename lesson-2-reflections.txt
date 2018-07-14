@@ -1,3 +1,18 @@
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 Staging area is the content to be submitted as the current commit, it acts as a buffer between directory and repository, to let users select which files for the current commit.
 
+How can you use the staging area to make sure you have one commit per logical change?
+Staging area can contain a subset of changes which directly represents the logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When making experimental features that are not supposed to be in the main version yet, branches help grouping such changes into different labels.
+
+How do the diagrams help you visualize the branch structure?
+It helps visualizing non-linear history of git commits, identifying branches and detached heads.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+A single branch. One branch represents a different feature, the both history stays with the merged branch after merging.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+pros: efficient without needing human interaction
+cons: it may resolve into unintended results, leading to hard to trace bugs
